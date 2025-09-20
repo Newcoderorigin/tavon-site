@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Tavon • Sovereign Portfolio</title>
+<link rel="preload" href="/styles.css" as="style">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
+
+  <header class="wrap hero">
+    <div>
+      <div class="badge">Sovereign</div>
+      <h1>Tavon Bugembe</h1>
+      <p class="muted">4D memory • elite UI/UX • affiliate growth</p>
+      <nav class="nav">
+        <a href="#work">Work</a><a href="#offers">Offers</a><a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="card clock">
+      <div class="t">⏱ <span id="clock"></span></div>
+      <div class="t small muted">local spacetime anchor</div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="work" class="card">
+      <h2>Featured Builds</h2>
+      <div class="grid">
+        <article class="tile">
+          <h3>Affiliate Trend Finder</h3>
+          <p>Static site + CSV promos. Zero backend, 𝘧𝘢𝘴𝘵.</p>
+          <a class="btn" href="#" onclick="openModal('trend')">View</a>
+        </article>
+        <article class="tile">
+          <h3>AlignmentForge</h3>
+          <p>Intent → forks → ritual plans. Memory‑backed.</p>
+          <a class="btn" href="#" onclick="openModal('align')">View</a>
+        </article>
+        <article class="tile">
+          <h3>SRI Sandbox</h3>
+          <p>Plausible‑world explorer (sim only).</p>
+          <a class="btn" href="#" onclick="openModal('sri')">View</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="offers" class="card">
+      <h2>Offers</h2>
+      <ul class="offers">
+        <li><strong>Affiliate Microsites</strong> — fast build, your tags, SEO clean.</li>
+        <li><strong>UX Elite Pass</strong> — redesigns with measurable uplift.</li>
+        <li><strong>Private Agents</strong> — research + trend scouting.</li>
+      </ul>
+      <div class="prefs">
+        <label>Theme
+          <select id="themeSel">
+            <option value="nebula">Nebula</option>
+            <option value="onyx">Onyx</option>
+            <option value="sunset">Sunset</option>
+          </select>
+        </label>
+        <button class="btn" id="savePref">Save Preference</button>
+        <span class="muted small" id="saveMsg"></span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>4D Memory</h2>
+      <p class="muted small">Session timeline captures your interactions. (Private in your browser.)</p>
+      <ul id="timeline" class="timeline"></ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <form id="contactForm" class="grid form">
+        <input required name="name" placeholder="Your name">
+        <input required name="email" placeholder="Email">
+        <textarea name="msg" placeholder="Project details"></textarea>
+        <button class="btn">Send</button>
+        <p class="muted small">Demo: stores message locally to respect privacy.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="wrap footer muted small">
+    <p>© <span id="y"></span> Tavon • Built for zero-cost hosting • Security headers on.</p>
+  </footer>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-body card">
+      <button class="close" onclick="closeModal()">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+<script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+<script>localStorage.setItem('tf_keywords', ["travel organizer", "phone tripod", "mini projector", "portable blender", "cat water fountain", "home gym", "desk setup", "wireless lav mic", "pet hair remover", "rgb lights", "ice roller", "car vacuum"]);</script>
