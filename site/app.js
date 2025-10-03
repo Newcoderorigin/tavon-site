@@ -56,7 +56,18 @@ function openModal(kind){
   mc.innerHTML = ({
     trend:`<h3>Affiliate Trend Finder</h3><p>Command-line builder that generates a static site + social CSV with your Amazon tag. Docker-friendly.</p>`,
     align:`<h3>AlignmentForge</h3><p>Intent→Forks→Rituals with local audit trail. Private by default.</p>`,
-    sri:`<h3>SRI Sandbox</h3><p>Explore nearby-possible worlds (simulation only) to prototype choices.</p>`
+    sri:`<h3>SRI Sandbox</h3><p>Explore nearby-possible worlds (simulation only) to prototype choices.</p>`,
+    codex:`<h3>Codex SaaS Foundry</h3>
+      <p>Codex can scaffold full-stack repos, wire Stripe billing, Prisma schemas, and CI — while you stay in the loop shipping.</p>
+      <p><strong>No ROI guarantees.</strong> What it delivers: production guardrails, a pricing model, and scripts that show your runway to $250k ARR.</p>
+      <ol>
+        <li>Spin up GitHub Codespaces or a local dev container.</li>
+        <li>Run the provided bootstrap script (Next.js + Prisma + NextAuth + Stripe).</li>
+        <li>Use GitHub CLI for commits/branches; let Codex draft PR-ready diffs.</li>
+        <li>Call OpenAI API for iterative copy &amp; workflow tuning.</li>
+      </ol>
+      <p>Included ideas to chase: Vendor Risk Extractor, MSP AI Responder, Post-call QA Scorecards. Each comes with pricing, churn, and LTV levers so you can pressure-test the $250k target.</p>
+      <p class="small muted">Ship fast, review diffs, keep ownership. Distribution is still on you.</p>`
   })[kind] || '<p>…</p>';
   document.getElementById('modal').classList.add('show');
   addTL('modal:open', {kind});
